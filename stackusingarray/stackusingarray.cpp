@@ -34,3 +34,7 @@ public:
 		}
 	}
 
+	bool empty() {
+		return(top == -1);
+	}
+
