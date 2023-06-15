@@ -72,3 +72,12 @@ int main() {
 			s.push(element);
 			break;
 		}
+		case '2': {
+			if (s.empty()) {
+				cout << "\nStack is empty." << endl;
+				break;
+			}
+			s.pop();
+			break;
+		}
+}
