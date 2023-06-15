@@ -22,7 +22,7 @@ public:
 		stack_array[top] = element;
 
 		cout << endl;
-		cout << element << "ditambahkan(pushed)." << endl;
+		cout << element << " ditambahkan(pushed)." << endl;
 
 		return element;
 	}
@@ -32,6 +32,9 @@ public:
 			cout << "\nStack is empty. Cannot pop." << endl;
 			return;
 		}
+
+		cout << "\nThe popped element is: " << stack_array[top] << endl;
+		top--;
 	}
 
 	bool empty() {
@@ -72,21 +75,18 @@ int main() {
 			s.push(element);
 			break;
 		}
-		case '2': {
+		case '2': 
 			if (s.empty()) {
 				cout << "\nStack is empty." << endl;
 				break;
 			}
 			s.pop();
 			break;
-		}
-		case '3': {
+		case '3': 
 			s.display();
 			break;
-		}
-		case '4': {
+		case '4': 
 			return 0;
-		}
 		default:
 			cout << "\nInvalid choice." << endl;
 			break;
