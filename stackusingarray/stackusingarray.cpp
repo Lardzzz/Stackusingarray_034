@@ -12,3 +12,18 @@ public:
 		top = -1;
 	}
 
+	string push(string element) {
+		if (top == 4) {
+			cout << "Stack is Full" << endl;
+			return "";
+		}
+
+		top++;
+		stack_array[top] = element;
+
+		cout << endl;
+		cout << element << "ditambahkan(pushed)." << endl;
+
+		return element;
+	}
+
